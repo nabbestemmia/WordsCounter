@@ -16,6 +16,8 @@
 		CAB1318B21FA080700680F5B /* WordsCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB1318A21FA080700680F5B /* WordsCounterTests.swift */; };
 		CAB1319721FA09E800680F5B /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB1319621FA09E800680F5B /* Client.swift */; };
 		CAB1319821FA09E800680F5B /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB1319621FA09E800680F5B /* Client.swift */; };
+		CAB1319B21FA1AD700680F5B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB1319A21FA1AD700680F5B /* Utilities.swift */; };
+		CAB1319C21FA1AD700680F5B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB1319A21FA1AD700680F5B /* Utilities.swift */; };
 		E987E9B98C2E6CEF7F6CEEDD /* Pods_WordsCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CF8723B8C3D046D2A30C67 /* Pods_WordsCounter.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,7 @@
 		CAB1318A21FA080700680F5B /* WordsCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsCounterTests.swift; sourceTree = "<group>"; };
 		CAB1318C21FA080700680F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAB1319621FA09E800680F5B /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		CAB1319A21FA1AD700680F5B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,7 @@
 				CAB1317C21FA080700680F5B /* Assets.xcassets */,
 				CAB1317E21FA080700680F5B /* LaunchScreen.storyboard */,
 				CAB1318121FA080700680F5B /* Info.plist */,
+				CAB1319A21FA1AD700680F5B /* Utilities.swift */,
 			);
 			path = WordsCounter;
 			sourceTree = "<group>";
@@ -322,6 +326,7 @@
 			files = (
 				CAB1317821FA080700680F5B /* ViewController.swift in Sources */,
 				CAB1317621FA080700680F5B /* AppDelegate.swift in Sources */,
+				CAB1319B21FA1AD700680F5B /* Utilities.swift in Sources */,
 				CAB1319721FA09E800680F5B /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB1319C21FA1AD700680F5B /* Utilities.swift in Sources */,
 				CAB1319821FA09E800680F5B /* Client.swift in Sources */,
 				CAB1318B21FA080700680F5B /* WordsCounterTests.swift in Sources */,
 			);
