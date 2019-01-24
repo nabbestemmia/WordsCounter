@@ -11,17 +11,31 @@ import XCTest
 
 class WordsCounterTests: XCTestCase {
 
+    let testText = "They were not railway children to begin with. I don't suppose they had\never thought about railways except as a means of getting to Maskelyne\nand Cook's, the Pantomime, Zoological Gardens, and Madame Tussaud's.\nThey were just ordinary suburban children, and they lived with their\nFather and Mother in an ordinary red-brick-fronted villa, with coloured\nglass in the front door, a tiled passage that was called a hall, a\nbath-room with hot and cold water, electric bells, French windows, and\na good deal of white paint, and 'every modern convenience', as the\nhouse-agents say."
+    
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCountOccurrencesOfASingleWordInText() {
+        var count = 0
+        let expectedResult = 7
+        XCTAssertEqual(count, expectedResult)
+    }
+    
+    func testGetWordsFromText(){
+        var count = 0
+        let expectedResult = 94
+        XCTAssertEqual(count, expectedResult)
+    }
+    
+    func testListOfWordsFromText(){
+        var count = 0
+        let expectedResult = 73
+        XCTAssertEqual(count, expectedResult)
     }
 
     func testPerformanceExample() {

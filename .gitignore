@@ -25,15 +25,11 @@ xcuserdata/
 *.dSYM.zip
 *.dSYM
 
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
+WordsCounter.xcworkspace/contents.xcworkspacedata
+WordsCounter.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
 
 # Swift Package Manager
 .build/
 
 # CocoaPods
 Pods/
-
-#xcworkspace
-WordsCounter.xcworkspace/

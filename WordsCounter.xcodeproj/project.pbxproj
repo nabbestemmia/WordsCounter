@@ -14,6 +14,8 @@
 		CAB1317D21FA080700680F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB1317C21FA080700680F5B /* Assets.xcassets */; };
 		CAB1318021FA080700680F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB1317E21FA080700680F5B /* LaunchScreen.storyboard */; };
 		CAB1318B21FA080700680F5B /* WordsCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB1318A21FA080700680F5B /* WordsCounterTests.swift */; };
+		CAB1319721FA09E800680F5B /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB1319621FA09E800680F5B /* Client.swift */; };
+		CAB1319821FA09E800680F5B /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB1319621FA09E800680F5B /* Client.swift */; };
 		E987E9B98C2E6CEF7F6CEEDD /* Pods_WordsCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CF8723B8C3D046D2A30C67 /* Pods_WordsCounter.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,7 @@
 		CAB1318621FA080700680F5B /* WordsCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordsCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB1318A21FA080700680F5B /* WordsCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsCounterTests.swift; sourceTree = "<group>"; };
 		CAB1318C21FA080700680F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB1319621FA09E800680F5B /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,7 @@
 		CAB1317421FA080700680F5B /* WordsCounter */ = {
 			isa = PBXGroup;
 			children = (
+				CAB1319521FA09D700680F5B /* Networking */,
 				CAB1317521FA080700680F5B /* AppDelegate.swift */,
 				CAB1317721FA080700680F5B /* ViewController.swift */,
 				CAB1317921FA080700680F5B /* Main.storyboard */,
@@ -115,6 +119,14 @@
 				CAB1318C21FA080700680F5B /* Info.plist */,
 			);
 			path = WordsCounterTests;
+			sourceTree = "<group>";
+		};
+		CAB1319521FA09D700680F5B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CAB1319621FA09E800680F5B /* Client.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		FB662694F2E614EA508337E3 /* Pods */ = {
@@ -139,6 +151,7 @@
 				CAB1316E21FA080700680F5B /* Sources */,
 				CAB1316F21FA080700680F5B /* Frameworks */,
 				CAB1317021FA080700680F5B /* Resources */,
+				99E29FD0FC31E27C83633C78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +170,7 @@
 				CAB1318221FA080700680F5B /* Sources */,
 				CAB1318321FA080700680F5B /* Frameworks */,
 				CAB1318421FA080700680F5B /* Resources */,
+				FAFC2708C3F3ECDBBA39927C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -245,6 +259,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		99E29FD0FC31E27C83633C78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WordsCounter/Pods-WordsCounter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Siesta/Siesta.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Siesta.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordsCounter/Pods-WordsCounter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C571D5D913B127ED96DBE056 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +295,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FAFC2708C3F3ECDBBA39927C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WordsCounterTests/Pods-WordsCounterTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Siesta/Siesta.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Siesta.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordsCounterTests/Pods-WordsCounterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -272,6 +322,7 @@
 			files = (
 				CAB1317821FA080700680F5B /* ViewController.swift in Sources */,
 				CAB1317621FA080700680F5B /* AppDelegate.swift in Sources */,
+				CAB1319721FA09E800680F5B /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB1319821FA09E800680F5B /* Client.swift in Sources */,
 				CAB1318B21FA080700680F5B /* WordsCounterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
