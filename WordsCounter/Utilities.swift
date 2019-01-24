@@ -38,7 +38,6 @@ class Utilities{
             tokenType = CFStringTokenizerAdvanceToNextToken(stringTokenizer)
         }
         
-        debugPrint("FINISHED")
         return result
     }
     
