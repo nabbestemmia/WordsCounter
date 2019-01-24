@@ -10,14 +10,15 @@ import Foundation
 
 class Utilities{
         
-    func getWordsDictionaryFromList(list: Array<String>) -> Dictionary<String, Int>{
-        var dict = Dictionary<String, Int>()
+    func getWordsDictionaryFromList(list: Array<String>) -> Dictionary<String, PropertiesForWord>{
+        var dict = Dictionary<String, PropertiesForWord>()
         for w in list{
-            if let count = dict[w]{
-                dict[w] = count + 1
+            if dict[w] != nil{
+                dict[w]!.occurrencies += 1
+                dict[w]!.isPrime = isPrimenumber(number: dict[w]!.occurrencies)
             }
             else{
-                dict[w] = 1
+                dict[w] = PropertiesForWord(occurrencies: 1, isPrime: false)
             }
         }
         return dict
@@ -47,4 +48,32 @@ class Utilities{
         return substring
     }
     
+    func isPrimenumber(number: Int) -> Bool{
+        if number == 1{
+            return false
+        }
+        if number <= 3{
+            return true
+        }
+        var isPrime = true
+        var i = 2
+        while i < number {
+            if number % i == 0 {
+                isPrime = false
+            }
+            i += 1
+        }
+        return isPrime
+    } 
+}
+
+
+struct PropertiesForWord{
+    var occurrencies: Int = 0
+    var isPrime: Bool = false
+    
+    init(occurrencies: Int, isPrime: Bool){
+        self.occurrencies = occurrencies
+        self.isPrime = isPrime
+    }
 }

@@ -28,7 +28,7 @@ class WordsCounterTests: XCTestCase {
             XCTFail("No match found for test word")
             return false
         }
-        count = match.value
+        count = match.value.occurrencies
         let expectedResult = 7
         XCTAssertEqual(count, expectedResult)
         return true
@@ -47,7 +47,7 @@ class WordsCounterTests: XCTestCase {
     }
     
     func testPrimeNumbers(){
-        let count = 0
+        let count = utilities.getWordsDictionaryFromList(list: utilities.getWordsFromText(text: testText.lowercased())).filter({ $0.value.isPrime }).count
         let expectedResult = 10
         XCTAssertEqual(count, expectedResult)
     }
