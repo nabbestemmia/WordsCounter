@@ -31,8 +31,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Occurrencies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMd-T7-hjd">
-                                            <rect key="frame" x="136.5" y="11.5" width="102.5" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Occurrences" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMd-T7-hjd">
+                                            <rect key="frame" x="138.5" y="11.5" width="98.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -54,7 +54,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="occurrencies" destination="MMd-T7-hjd" id="1i9-jf-DKa"/>
+                                    <outlet property="occurrences" destination="MMd-T7-hjd" id="KwA-k0-sCi"/>
                                     <outlet property="prime" destination="T00-2y-5YV" id="q0s-qT-3Th"/>
                                     <outlet property="word" destination="Tbf-f9-hg0" id="wsO-Is-8B7"/>
                                 </connections>

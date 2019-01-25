@@ -14,12 +14,28 @@ class Utilities{
         var dict = Dictionary<String, PropertiesForWord>()
         for w in list{
             if dict[w] != nil{
-                dict[w]!.occurrencies += 1
-                dict[w]!.isPrime = isPrimenumber(number: dict[w]!.occurrencies)
+                dict[w]!.occurrences += 1
+                dict[w]!.isPrime = isPrimenumber(number: dict[w]!.occurrences)
             }
             else{
-                dict[w] = PropertiesForWord(occurrencies: 1, isPrime: false)
+                dict[w] = PropertiesForWord(occurrences: 1, isPrime: false)
             }
+        }
+        return dict
+    }
+    
+    func getWordsDictionaryFromList2(list: Array<String>) -> Dictionary<String, PropertiesForWord>{
+        var dict = Dictionary<String, PropertiesForWord>()
+        for w in list{
+            if dict[w] != nil{
+                dict[w]!.occurrences += 1
+            }
+            else{
+                dict[w] = PropertiesForWord(occurrences: 1, isPrime: false)
+            }
+        }
+        for item in dict{
+            dict[item.key] = PropertiesForWord(occurrences: item.value.occurrences, isPrime: isPrimenumber(number: item.value.occurrences))
         }
         return dict
     }
@@ -39,6 +55,18 @@ class Utilities{
         }
         
         return result
+    }
+    
+    func getWordsFromText2(text: String) -> Array<String>{
+        var words = [String]()
+        let range = text.startIndex..<text.endIndex
+        func cb(s: String?, r: Range<String.Index>, r1: Range<String.Index>, ok: inout Bool) -> Void{
+            if s != nil{
+                words.append(s!)
+            }
+        }
+        text.enumerateSubstrings(in: range, options: .byWords, cb)
+        return words
     }
     
     func substringWithRange(text: String, aRange : CFRange) -> String {
@@ -68,11 +96,11 @@ class Utilities{
 
 
 struct PropertiesForWord{
-    var occurrencies: Int = 0
+    var occurrences: Int = 0
     var isPrime: Bool = false
     
-    init(occurrencies: Int, isPrime: Bool){
-        self.occurrencies = occurrencies
+    init(occurrences: Int, isPrime: Bool){
+        self.occurrences = occurrences
         self.isPrime = isPrime
     }
 }

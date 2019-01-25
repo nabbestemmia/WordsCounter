@@ -11,7 +11,7 @@ import UIKit
 class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var prime: UILabel!
-    @IBOutlet weak var occurrencies: UILabel!
+    @IBOutlet weak var occurrences: UILabel!
     @IBOutlet weak var word: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

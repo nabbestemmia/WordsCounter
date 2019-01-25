@@ -42,7 +42,7 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
         let item  = wordsList[indexPath.row]
         cell.word.text = item.key
         cell.prime.text = "Prime: \(item.value.isPrime)"
-        cell.occurrencies.text = "Occurrences: \(item.value.occurrencies)"
+        cell.occurrences.text = "Occurrences: \(item.value.occurrences)"
         return cell
     }
     
